@@ -1,0 +1,13 @@
+/*----------------------------------------*\
+  TEXT
+\*----------------------------------------*/
+
+.text-ellpisis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-primary {
+  color: $brand-color;
+}

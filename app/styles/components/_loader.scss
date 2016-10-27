@@ -1,0 +1,76 @@
+/*----------------------------------------*\
+  LOADER
+  By Curtis Andrews
+  https://codepen.io/candrews/pen/KzJJmz
+\*----------------------------------------*/
+
+$animationLength: 1.5s;
+$animationRadius: 20px;
+$dotSize: 12px;
+
+.loader {
+  position: relative;
+  width: $animationRadius * 3 + $dotSize;
+  height: $dotSize;
+  margin: $spacing-unit-huge auto;
+}
+
+.dot {
+  display: inline-block;
+  width: $dotSize;
+  height: $dotSize;
+  border-radius: $dotSize * 0.5;
+  background-color: $alt-color-lighter;
+  position: absolute;
+}
+
+.dot--1 {
+  animation: animateDot1 $animationLength linear infinite;
+  left: $animationRadius;
+  background-color: $brand-color;
+}
+
+.dot--2 {
+  animation: animateDot2 $animationLength linear infinite;
+  animation-delay: $animationLength / 3;
+  left: $animationRadius * 2;
+}
+
+.dot--3 {
+  animation: animateDot3 $animationLength linear infinite;
+  left: $animationRadius;
+}
+
+.dot--4 {
+  animation: animateDot4 $animationLength linear infinite;
+  animation-delay: $animationLength / 3;
+  left: $animationRadius * 2;
+}
+
+@keyframes animateDot1 {
+  0%{ transform: rotate(0deg) translateX(-$animationRadius); }
+  25% { transform: rotate(180deg) translateX(-$animationRadius); }
+  75% { transform: rotate(180deg) translateX(-$animationRadius); }
+  100% { transform: rotate(360deg) translateX(-$animationRadius); }
+}
+
+@keyframes animateDot2 {
+  0%{ transform: rotate(-0deg) translateX(-$animationRadius); }
+  25% { transform: rotate(-180deg) translateX(-$animationRadius); }
+  75% { transform: rotate(-180deg) translateX(-$animationRadius); }
+  100% { transform: rotate(-360deg) translateX(-$animationRadius); }
+}
+
+@keyframes animateDot3 {
+  0%{ transform: rotate(0deg) translateX($animationRadius); }
+  25% { transform: rotate(180deg) translateX($animationRadius); }
+  75% { transform: rotate(180deg) translateX($animationRadius); }
+  100% { transform: rotate(360deg) translateX($animationRadius); }
+}
+
+@keyframes animateDot4 {
+  0%{ transform: rotate(-0deg) translateX($animationRadius); }
+  25% { transform: rotate(-180deg) translateX($animationRadius); }
+  75% { transform: rotate(-180deg) translateX($animationRadius); }
+  100% { transform: rotate(-360deg) translateX($animationRadius); }
+}

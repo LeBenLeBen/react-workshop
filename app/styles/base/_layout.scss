@@ -1,0 +1,22 @@
+/*----------------------------------------*\
+  LAYOUT
+\*----------------------------------------*/
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  background-color: $alt-color-darker;
+}
+
+.wrapper {
+  max-width: 55rem;
+  margin: $spacing-unit-large auto;
+  padding: 0 $spacing-unit-default;
+}
+
+figure {
+  margin: 0;
+}

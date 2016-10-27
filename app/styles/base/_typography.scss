@@ -1,0 +1,17 @@
+/*----------------------------------------*\
+  TYPOGRAPHY
+\*----------------------------------------*/
+
+h1 {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: rem(24px);
+  text-shadow: 5px 5px 0 rgba(0,0,0,.4);
+
+  @include media('md') {
+    font-size: rem(40px);
+  }
+}
+
+a {
+  text-decoration: none;
+}
