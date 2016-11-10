@@ -2,6 +2,7 @@ import React from 'react';
 import Loader from 'components/Loader';
 import CharacterCard from 'components/CharacterCard';
 import { objToParams } from 'helpers/urls';
+import 'whatwg-fetch'
 
 export default class Characters extends React.Component {
 
