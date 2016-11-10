@@ -6,7 +6,8 @@ export default class Thumbnail extends React.Component {
     thumbnail: React.PropTypes.object.isRequired,
     format: React.PropTypes.oneOf([
       'standard_fantastic',
-      'portrait_small'
+      'portrait_small',
+      'detail'
     ])
   };
 

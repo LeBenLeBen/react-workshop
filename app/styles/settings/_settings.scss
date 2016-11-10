@@ -34,7 +34,7 @@ $font-size-large:                   1.5rem;
 $line-height-default:               1.45;
 
 $text-color:                        $alt-color-lighter;
-$link-color:                        $brand-color;
+$link-color:                        white;
 $muted-color:                       transparentize($text-color,.4);
 
 
@@ -126,7 +126,7 @@ $btn-primary-active-bkg-color:      darken($btn-primary-bkg-color, 5%);
 
 $field-padding:                     $spacing-unit-small;
 
-$field-color:                       inherit;
+$field-color:                       $alt-color-dark;
 $field-font-size:                   inherit;
 $field-font-family:                 inherit;
 $field-line-height:                 $line-height-default;

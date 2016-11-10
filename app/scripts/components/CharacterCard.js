@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 import Thumbnail from 'components/shared/Thumbnail';
 
@@ -12,7 +13,7 @@ export default class CharacterCard extends React.Component {
     const character = this.props.character;
 
     return (
-      <a href="#" className="character-card box box--tiny box--default mrgb">
+      <Link to={ 'character/' + character.id } className="character-card box box--tiny box--default mrgb">
         <figure>
           <div className="character-card__img">
             <Thumbnail
@@ -22,7 +23,7 @@ export default class CharacterCard extends React.Component {
           </div>
           <figcaption className="pdgt- pdgb-- text-center text-uppercase text-ellpisis">{ character.name }</figcaption>
         </figure>
-      </a>
+      </Link>
     );
   }
 
