@@ -28,6 +28,7 @@
     "eslint": "^3.8.1",
     "eslint-plugin-react": "^6.4.1",
     "kanbasu": "^1.4.0",
+    "node-sass": "^3.11.2",
     "postcss-loader": "^1.1.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
